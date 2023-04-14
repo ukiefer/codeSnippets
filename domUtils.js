@@ -46,13 +46,13 @@ const addGlobalEventListener = (type, selector, callback, options, parent = docu
 }
 
 /**
-* Helper to create an element
+* Helper to create an element by given html markup
 * @author   Uwe Kiefer
-* @param    {String}   code  Valid html markup with a single nodeElement
+* @param    {String}   html  Valid html markup with a single nodeElement
 * @return   {Element}        Eelement based on the html
 */
-const createElement = (code) => {
+const createElement = (html) => {
     const container = document.createElement('div')
-    container.innerHTML = code
+    container.innerHTML = html
     return container.firstElementChild
 }
